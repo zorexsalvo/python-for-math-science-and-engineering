@@ -33,6 +33,14 @@ def tests_exercise_2():
 
 def test_exercise_3():
     import exercise3
+    test_data = [('ph', 'phphph'), ('python', 'pythonpythonpython'),
+                 ('5', '555')]
+
+    for data in test_data:
+        with captured_output() as (out, err):
+            exercise3.tripleprint(data[0])
+            output = out.getvalue().strip()
+            assert data[1] == output
 
 
 def test_exercise_4():
