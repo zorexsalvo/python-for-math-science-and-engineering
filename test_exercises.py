@@ -12,6 +12,7 @@ def tests_exercise_2():
 def test_exercise_3():
     import exercise3
 
+
 def test_exercise_4():
     import exercise4
     expected_value = ['Spizikes', 'Air Force 1', 'Curry 2', 'Melo 5']
