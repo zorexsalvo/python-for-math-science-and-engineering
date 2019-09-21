@@ -52,7 +52,13 @@ def test_exercise_4():
 
 
 def test_exercise_5():
-    import exercise5
+
+    with captured_output() as (out, err):
+        import exercise5
+        output = out.getvalue().strip()
+
+        for number in output.split('\n'):
+            assert int(number) > 90
 
 
 def test_exercise_6():
