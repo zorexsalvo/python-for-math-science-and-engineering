@@ -15,3 +15,8 @@ cooldictionary = {}
 
 for key, word in enumerate(words):
     cooldictionary[word] = definitions[key]
+
+
+# Alternative solution
+words_definitions_zip = zip(words, definitions)
+cooldictionary = dict(tuple(words_definitions_zip))
