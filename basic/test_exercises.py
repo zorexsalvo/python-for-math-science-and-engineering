@@ -1,8 +1,11 @@
 import pytest
+import sys
 
 
 def tests_exercise_1():
     import exercise1
+    expected_value = "Hi my name is Julie and I am 42 years old"
+    assert expected_value == exercise1.sentence
 
 
 def tests_exercise_2():
