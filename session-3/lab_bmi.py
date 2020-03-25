@@ -32,5 +32,5 @@ def main():
         else:
             print("Error: Unknown measurement system. Please use imperial or metric.")
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()

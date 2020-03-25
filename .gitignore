@@ -106,3 +106,6 @@ venv.bak/
 
 # .vim
 *.sw*
+
+# session-3
+products.csv
