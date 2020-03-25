@@ -6,8 +6,13 @@ authors = ["Zorex Salvo <zorexsalvo@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+pytest = "^5.4.1"
+faker = "^4.0.2"
+pytest-cov = "^2.8.1"
 
 [tool.poetry.dev-dependencies]
+yapf = "^0.29.0"
+pylint = "^2.4.4"
 
 [build-system]
 requires = ["poetry>=0.12"]
