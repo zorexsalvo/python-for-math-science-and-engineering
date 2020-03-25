@@ -31,11 +31,9 @@ def clean_products(reader):
     """
     Removes all products that don't have category.
     """
-    cleaned_data = []
     for row in reader:
         if row[25]:
-            cleaned_data.append(row)
-    return cleaned_data
+            yield row
 
 
 def main(target=None):
@@ -49,7 +47,8 @@ def main(target=None):
                 for row in cleaned_products:
                     writer.writerow(row)
         else:
-            print(cleaned_products)
+            for row in cleaned_products:
+                print(', '.join(row))
 
 
 if __name__ == '__main__':
