@@ -7,6 +7,7 @@ authors = ["Zorex Salvo <zorexsalvo@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 jupyter = "^1.0.0"
+pandas = "^1.0.3"
 
 [tool.poetry.dev-dependencies]
 
